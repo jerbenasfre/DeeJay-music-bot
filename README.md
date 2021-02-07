@@ -39,20 +39,43 @@ Download sqlite from https://sqlitebrowser.org/dl/
 
 Commands for bot prefaced with "dj."
 
-- dj.help \- see commands list in discord.
-- dj.join \- joins the vc of requested user.
-- dj.leave \- leaves current vc. Note, leaving clears the playlist.
-- dj.play youtube_url  \- plays video in voice chat. Queues if a song is currently playing.
-- dj.pause \- pauses the current song.
-- dj.resume \- resumes the current song.
-- dj.show \- shows current song and queued songs.
-- dj.volume int \- changes the volume of the bot.
-- dj.repeat \[single|queue/all|off\] \- Repeats current song or queue or turns repeat off.
-- dj.skip int \- skips current song or the nth song.
-- dj.move int \- moves the nth song to the top of the playlist.
-- dj.remove int \- removes the nth song.
-- dj.clear \- clears all songs from guild playlist.
-- dj.shuffle \- shuffles the playlist
+- clear \- Clears the current playlist.
+
+- delete \- Deletes the playlist form database if it exists. Type dj.delete "playlist_name" to use.
+
+- delete_song \- Deletes a song from a playlist. Type dj.delete_song "playlist name" "song name" to use command. Note: "song name" must be the same name that is saved into the playlist.
+
+- edit_playlist \- Edits a playlist name. Type dj.edit "old name" "new name" to use command.
+
+- join \- Joins the voice channel of the requested user.
+
+- leave \- Leaves current voice channel. Note: Current playlist will be lost.
+
+- load \- Retrieves playlist from database if it exists. Type dj.load "playlist name" to use.
+
+- move \- Moves selected song to the top of the playlist. Type dj.move number to move a song.
+
+- pause \- Pauses the bot.
+
+- play \- Searches for video on youtube or plays given url. Type dj.play "url" or "song title" to use. Song title + artist for more accurate results.
+
+- remove \- Removes selected song from the playlist. Type dj.remove number to remove a song.
+
+-- repeat \- Type dj.repeat single, all or off to change repeat mode.
+
+- resume \- Unpauses the bot.
+
+- save \- Binds and saves current playlist to requested user. Type dj.save "playlist name" to save playlist. See dj.load command to load a saved playlist.
+
+- show \- Displays current playlist.
+
+- show_playlist \- Lists the songs of a playlist or lists all playlists a user has. Type dj.show_playlist "playlist name" to show songs or leave "playlist name" blank to show all playlists
+
+- shuffle \- Shuffles the playlist.
+
+- skip \- Skips the current song.
+
+- volume \- Changes the volume of the bot.
 
 Owner only commands:
 - dj.sleep \- disconnects the bot from discord. MUST WAIT FOR AT LEAST 10 secs AFTER LEAVING VCS.
