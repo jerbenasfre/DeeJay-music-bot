@@ -35,4 +35,4 @@ async def sleep(ctx):
 
 
 # run token
-bot.run("NjAyMzc1Mzc5OTUyNTk5MDQx.XTP7yg.iS-5kgP34tU_VcsFbHm6PMlvjiM")
+bot.run("ADD TOKEN HERE")
